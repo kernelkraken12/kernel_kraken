@@ -1,0 +1,29 @@
+# Example output — `shader-warmup "Cairn"`
+
+```
+   _  _  ____  ____  _  _  ____
+  ( \( )(  _ \(  _ \( \/ )(  _ \
+   )  (  ) __/ ) __/ )  (  ) __/
+  (_)\_)(__)  (__)  (_/\_)(__)
+
+🔥 shader-warmup — Cairn
+✅ Warmed up! +18.4 MB of shaders baked in 90s.
+```
+
+# Example output — `shader-warmup "Cairn" --check` (already warm)
+
+```
+   _  _  ____  ____  _  _  ____
+  ( \( )(  _ \(  _ \( \/ )(  _ \
+   )  (  ) __/ ) __/ )  (  ) __/
+  (_)\_)(__)  (__)  (_/\_)(__)
+
+🔥 shader-warmup — Cairn
+✅ Already warm — launch and play smooth!
+```
+
+# Steam launch-option (automatic warm-up before every launch)
+
+```
+shader-warmup "Cairn" && %command%
+```

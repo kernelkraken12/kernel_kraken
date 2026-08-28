@@ -1,0 +1,6 @@
+[Unit]
+Description=Shader warmup example — run before a game session
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/shader-warmup "Cairn" --check
