@@ -1,0 +1,38 @@
+# Example output — `proton "Cairn"`
+
+```
+      .--.
+     |o_o |
+     |:_/ |
+    //   \ \
+   (|     | )
+  /'\_   _/`\
+  \___)=(___/
+
+🎮 Cairn (Steam: 1588550)
+
+🥉 ProtonDB verdict: SILVER — 412 reports
+
+✅ CONFIRMED-FIXES (community-tested):
+  • Proton: try Proton 9.0-4 or the latest GE-Proton
+  • Launch-option: gamemoderun %command%
+  • Tip: lower in-game shadows / effects for a solid FPS gain
+
+🚀 GET-RUNNING (the fast path):
+  1. Steam → game → Properties → Compatibility
+  2. Pick the Proton from the list above
+  3. Launch options → paste the suggested line
+  → Done — play! 🎮
+
+👶 NEW TO LINUX GAMING?
+• Proton = Valve's tool that runs Windows games on Linux
+  (Steam does it automatically — you just pick the version!)
+• Set the Proton version: Steam → game → Properties →
+  Compatibility → "Force the use of a specific tool"
+  → pick Proton 9.0-4 (or the newest GE-Proton)
+• Launch options: Properties → General → "Launch options"
+  → paste what the tool suggests (e.g. gamemoderun %command%)
+• gamemode = a performance booster:
+  install with your package manager (e.g. yay -S gamemode),
+  then add "gamemoderun %command%" to the launch options
+```

@@ -1,0 +1,7 @@
+[Unit]
+Description=Refresh the protondb-cli verdict cache
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/proton --no-art --no-beginner --json "Skyrim" >/dev/null

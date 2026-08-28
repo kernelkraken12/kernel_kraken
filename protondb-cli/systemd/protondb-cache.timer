@@ -1,0 +1,10 @@
+[Unit]
+Description=Daily refresh of the protondb-cli verdict cache
+After=network-online.target
+
+[Timer]
+OnCalendar=daily
+Persistent=true
+
+[Install]
+WantedBy=timers.target
