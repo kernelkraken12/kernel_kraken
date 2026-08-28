@@ -1,75 +1,63 @@
-# 🐙 The Kernel Kraken's Lair
+# 🐙 Kernel Kraken
 
-**Open-source software, Linux-first tools, and homelab experiments.**
+**The Kernel Kraken's lair — open-source software, Linux-first tools, and homelab experiments.**
 
-A mixed collection of practical projects built for the self-hosted and Linux-first community: CLI tools, TUI apps, Proxmox / homelab utilities, system scripts, and the occasional experimental idea that escapes the depths.
+A collection of practical, Linux-focused open-source projects: CLI utilities, TUI apps,
+Proxmox/homelab scripts, and system helpers for the FOSS community. Every project in
+this repo is tested before it is uploaded.
 
-> *Built in the desert. Released by the kraken.*
+## 📦 Projects
 
----
-
-## 🎯 What Lives Here
-
-| Lane | What you'll find |
+| Project | What it does |
 |---|---|
-| 🖥️ CLI tools | Practical command-line utilities for Linux |
-| 🎨 TUI apps | Terminal user interfaces that make the shell prettier |
-| 🏠 Homelab | Proxmox helpers, mirror utilities, monitoring fragments |
-| 📜 System scripts | Safe, idiomatic setup / hardening / maintenance scripts |
-| 🧪 Experiments | Proof-of-concept code, half-finished ideas, throwaway tests |
+| [**protondb-cli**](protondb-cli/) | Check any Steam game's Linux compatibility (ProtonDB) from your terminal — verdicts, confirmed fixes, and beginner guidance. |
+| [**shader-warmup**](shader-warmup/) | Pre-bake DXVK shader caches so Linux games start smooth — no more first-minute stutter. |
 
-Mostly Linux. Always FOSS. MIT-licensed. Human-reviewed.
+## 🧰 What lives here
 
----
+- CLI utilities and TUI apps for everyday Linux use
+- Proxmox and homelab helpers
+- Linux-gaming tools (Proton, DXVK, shader caches)
+- System scripts and configuration examples
+- Android open-source experiments (when they arrive)
 
-## 🛠️ Ground Rules (the family standard)
+## 📜 Project conventions
 
-Every project in this lair ships complete and reviewable:
-
-- **Safe, idiomatic code** — no reckless `sudo`, no hard-coded absolute paths, XDG base directory standards respected
-- **Real dependencies only** — every library, binary, and flag actually exists
-- **Full project package** — `src/` + `tests/` + example `systemd/` unit + `Dockerfile` + `README.md` + `LICENSE` (MIT)
-- **Self-review checklist** — security notes, dependency list, known edge cases (`CHECKLIST.md`)
-- **Local test instructions** — exact steps to run and validate before any release
-- **Human approval gate** — nothing is committed or pushed without explicit human review and an "Approved"
-
----
-
-## 🗂️ Canonical Project Tree
+Every project follows the same canonical structure:
 
 ```
 <project>/
 ├── src/
 ├── tests/
-├── systemd/<name>.service   # example unit
-├── examples/                # sample configs
-├── android/                 # included only when Android code exists
+├── systemd/           # example units
+├── examples/          # sample configs and outputs
+├── android/           # only when Android code exists
 ├── Dockerfile
 ├── .gitignore
-├── README.md                # primary-repo note + AI-assistance disclosure
-├── LICENSE                  # MIT
-└── CHECKLIST.md             # self-review: security, deps, edge cases, test steps
+├── README.md          # primary-repo note + AI-assistance disclosure
+├── LICENSE            # MIT
+└── CHECKLIST.md       # security notes, deps, edge cases, test steps
 ```
 
----
+Rules:
 
-## 📦 The Fleet
-
-| Project | Lane | Status |
-|---|---|---|
-| [**protondbcli**](./protondbcli/) — will it run on Linux, and how? | 🖥️ CLI tools | ✅ **live** (v0.1.0) |
-| *(next project TBD)* | TBD | 🚧 planned |
-
----
+1. Safe, idiomatic Linux code — no reckless sudo, XDG base directory standards.
+2. Only real, existing libraries and packages — no invented dependencies.
+3. Each project ships: source, tests, systemd unit, Dockerfile, README, LICENSE.
+4. Each project carries a self-review checklist (security, deps, edge cases).
+5. Clear local test instructions for the human operator.
+6. Every project is tested to work before it is uploaded.
+7. All canonical assets are always generated — no exceptions.
 
 ## 🤝 Contributing
 
-This is a family-run lair with a human approval gate. PRs and issues are welcome, but all changes are reviewed by hand before merging — no bots, no auto-merge, no surprises.
+The Kernel Kraken is a small family project. Projects are reviewed by a human before
+they land here. The lair is open, the kraken is friendly — be excellent to each other.
 
-## 📜 License
+## 📄 License
 
-Everything here is MIT-licensed unless a project says otherwise. Use it, learn from it, improve it — just keep the attribution.
+MIT — see each project's LICENSE file.
 
 ---
 
-**The Kernel Kraken's Lair — built in the desert, released by the kraken. 🐙**
+*Built with AI assistance. A family collection — Linux-first, community-driven.*
