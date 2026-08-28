@@ -1,0 +1,21 @@
+[Unit]
+Description=protondbcli daily cache warm (kernel kraken game checker)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+# Example: pre-warm the cache for a few favourite games every morning.
+# Each game runs as its own --quiet call so the log stays readable.
+ExecStart=/home/%u/.local/bin/proton "cairn" --quiet --fresh
+ExecStart=/home/%u/.local/bin/proton "hades" --quiet --fresh
+Nice=19
+# No root, no network namespaces, no capability tricks (ground rule #1).
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=read-only
+ProtectKernelTunables=true
+ProtectControlGroups=true
+
+[Install]
+WantedBy=timers.target

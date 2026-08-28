@@ -1,0 +1,10 @@
+[Unit]
+Description=Daily protondbcli cache warm timer
+Requires=protondbcli.service
+
+[Timer]
+OnCalendar=daily
+Persistent=true
+
+[Install]
+WantedBy=timers.target
