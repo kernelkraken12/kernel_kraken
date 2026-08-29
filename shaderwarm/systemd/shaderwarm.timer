@@ -1,0 +1,10 @@
+[Unit]
+Description=Daily shaderwarm cache report timer
+Requires=shaderwarm.service
+
+[Timer]
+OnCalendar=daily
+Persistent=true
+
+[Install]
+WantedBy=timers.target

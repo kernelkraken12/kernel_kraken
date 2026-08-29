@@ -1,0 +1,16 @@
+[Unit]
+Description=shaderwarm daily cache report (kernel kraken)
+After=network-online.target
+
+[Service]
+Type=oneshot
+# Example: log the shader-cache state every morning so you can see
+# which games are warm and which need a warmup pass.
+ExecStart=/home/%u/.local/bin/shaderwarm scan --json
+Nice=19
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=read-only
+
+[Install]
+WantedBy=timers.target
