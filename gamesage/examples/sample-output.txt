@@ -1,0 +1,14 @@
+# Example — `gamesage "Cairn"` (simple mode)
+
+```
+   __  __  ___  ____  ___  ___  ___  ____  _____
+  / / / / / _ \|  _ \/ _ \/ _ \/ _ \|  _ \| ____|  (the sage speaks!)
+
+🟢 Your game ran GREAT — smooth and happy!
+
+💡 QUICK WINS:
+  • Hot CPU — cap frames: add `MANGOHUD_CONFIG=fps_limit=60 %command%` to the launch options.
+
+📄 Your report has been saved to: /home/you/.local/share/gamesage/Cairn/latest.txt
+   (Come back any time — your past reports live here too.)
+```
