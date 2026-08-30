@@ -1,24 +1,35 @@
-# Self-review checklist — gamesage
+# gamesage — self-review checklist (the kraken standard)
 
 ## Security notes
-- Reads only the user's own MangoHud logs and writes only under `~/.local/share/gamesage/`.
-- No root, no network, no shell execution. Pure stdlib.
+- No sudo anywhere. Installs to `~/.local` (XDG), reads system sensors read-only.
+- No telemetry, no network calls, no uploads. All data stays local.
+- `install.sh` only copies files into `$HOME/.local` — no system writes.
+- The background sampler is a child process of the session; it is killed on
+  `gamesage end`.
 
-## Dependencies
-- Python 3.10+ stdlib only (argparse, csv, json, dataclasses, pathlib). Zero pip deps at runtime.
+## Dependency list (real, minimal)
+- Python 3.10+ (stdlib only — `json`, `glob`, `re`, `subprocess`, `argparse`,
+  `pathlib`, `time`, `html`).
+- MangoHud (optional, read-only log parsing if present).
+- Steam (optional — reads local manifests only if a Steam install exists).
 
-## Known edge cases
-- No MangoHud log found → report shows a neutral verdict and tells the player how to enable logging.
-- Log with missing/empty columns → gracefully falls back to zeros (no crash).
-- Very short sessions (<10 samples) → the 1% low may equal the min FPS; report still valid.
-- Non-ASCII game names → handled (utf-8 safe file writes).
+## Known edge-cases
+- No Steam install → appid/game-name resolution returns None; the report still
+  works with the name you typed.
+- No MangoHud → FPS rows show "—" and the report suggests installing MangoHud
+  (never invents FPS numbers).
+- No hwmon sensors (e.g. containers/VM) → temp rows show "—".
+- Game not found by name → appid stays None; shader-cache/Proton rows show "—".
+- `gamesage end` with no session → clear "no session" message, exit 1.
+- Very short sessions (<20s, zero samples) → report still prints, duration ~0.
+- The watcher auto-stops when the session ends (checked every sample tick).
 
-## Exact test steps (run before any release)
+## Test steps (run these before release)
 ```bash
-python3 -m venv .venv && source .venv/bin/activate
-pip install -e .
-pip install pytest
-pytest tests/ -q          # expect ALL pass
-gamesage "Cairn"          # smoke: prints a report + saves the note
-gamesage "Cairn" --json   # smoke: valid JSON out
+python3 -m unittest discover -s tests -v          # expect 10/10 pass
+gamesage start "Cairn"                             # session begins + watcher spawns
+sleep 5 && gamesage end                            # report prints + HTML saves
+gamesage last                                      # points at the saved report
+python3 -m gamesage --version                      # prints gamesage 0.1.0
+bash -n install.sh                                 # installer syntax check
 ```

@@ -12,6 +12,7 @@ this repo is tested before it is uploaded.
 |---|---|
 | [**protondb-cli**](protondb-cli/) | Check any Steam game's Linux compatibility (ProtonDB) from your terminal — verdicts, confirmed fixes, and beginner guidance. |
 | [**shader-warmup**](shader-warmup/) | Pre-bake DXVK shader caches so Linux games start smooth — no more first-minute stutter. |
+| [**gamesage**](gamesage/) | Session reports + performance tweaks for Linux gamers — run before you play, get a friendly report + tips after. |
 
 ## 🧰 What lives here
 

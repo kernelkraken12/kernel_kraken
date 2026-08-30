@@ -1,14 +1,23 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "gamesage"
 version = "0.1.0"
-description = "Simple game session reports with smart performance tips for Linux gamers."
+description = "The Linux gamer's session sage — a friendly report + performance tweaks after every playthrough."
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
+keywords = ["gaming", "linux", "steam", "proton", "performance", "report"]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Topic :: Games/Entertainment",
+]
 
 [project.scripts]
 gamesage = "gamesage.cli:main"
