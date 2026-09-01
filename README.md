@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/kernel-kraken-logo.png" width="170" alt="Kernel Kraken"/>
+</p>
+
 # 🐙 Kernel Kraken
 
 <p align="center">
