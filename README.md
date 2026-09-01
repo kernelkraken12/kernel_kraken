@@ -1,5 +1,9 @@
 # 🐙 Kernel Kraken
 
+<p align="center">
+  <img src="kernel-kraken-emblem.png" alt="Kernel Kraken" width="140"/>
+</p>
+
 **The Kernel Kraken's lair — open-source software, Linux-first tools, and homelab experiments.**
 
 A collection of practical, Linux-focused open-source projects: CLI utilities, TUI apps,
