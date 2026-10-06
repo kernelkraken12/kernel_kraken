@@ -1,0 +1,22 @@
+[
+  {
+    "id": "f0e1d2c3",
+    "label": "Fedora workstation",
+    "hostname": "192.168.1.2",
+    "port": 22,
+    "user": "yurii",
+    "password": null,
+    "privateKey": "-----BEGIN OPENSSH PRIVATE KEY-----\nREPLACE_WITH_YOUR_KEY\n-----END OPENSSH PRIVATE KEY-----",
+    "mac": "b0:41:6f:15:4d:8a"
+  },
+  {
+    "id": "a1b2c3d4",
+    "label": "Proxmox host",
+    "hostname": "192.168.1.26",
+    "port": 22,
+    "user": "root",
+    "password": "(only for a lab you own — see the security notes in CHECKLIST.md)",
+    "privateKey": null,
+    "mac": null
+  }
+]

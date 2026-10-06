@@ -1,0 +1,19 @@
+[Unit]
+Description=Enable Wake-on-LAN on the primary NIC (so TuxDeck can power this host on)
+Documentation=https://github.com/kernelkraken12/kernel_kraken
+After=network-online.target
+Wants=network-online.target
+# If the interface is managed by NetworkManager, this unit can run before it:
+After=NetworkManager-wait-online.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+EnvironmentFile=/etc/tuxdeck-wol.env
+# TUXDECK_WOL_IFACE=eno1
+# TUXDECK_WOL_MODE=g
+ExecStart=/usr/sbin/ethtool -s ${TUXDECK_WOL_IFACE} wol ${TUXDECK_WOL_MODE}
+ExecStartPost=/usr/sbin/ethtool ${TUXDECK_WOL_IFACE}
+
+[Install]
+WantedBy=multi-user.target

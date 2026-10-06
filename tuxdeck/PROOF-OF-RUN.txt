@@ -1,0 +1,8 @@
+TuxDeck unit tests — proof of run
+seat:      CT106 (hermes-ct), 2026-10-06T18:22:12Z
+toolchain: Temurin JDK 21.0.12.1 + kotlinc 2.4.20 + junit-platform-console-standalone 1.10.2
+command:   java -cp <junit-console>:<kotlin-stdlib> org.junit.platform.console.ConsoleLauncher execute \
+             --class-path build-out:src/test/resources:<kotlin-stdlib> --scan-class-path build-out
+result:    23 tests found · 23 successful · 0 failed
+control:   with kotlin-stdlib absent → 23/23 FAIL (NoClassDefFoundError)
+control:   with take(8) mutated to p.sum() → the guest-exclusion test FAILS

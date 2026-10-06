@@ -1,0 +1,91 @@
+apparmor.service                                      loaded    active     exited       Load AppArmor profiles
+avahi-daemon.service                                  loaded    active     running      Avahi mDNS/DNS-SD Stack
+biscuit-share.service                                 loaded    active     running      Biscuit Share — family file service (WebDAV /dav + family-room UI)
+biscuitmarket.service                                 loaded    active     running      BiscuitMarket 市 — the family's Chinese-app catalog (verdict engine + web UI)
+biscuitpet.service                                    loaded    active     running      BiscuitPet cat - family Tamagotchi (state + PWA)
+blk-availability.service                              loaded    active     exited       Availability of block devices
+books.service                                         loaded    active     running      Bill's Books backend (cn-side)
+chrony.service                                        loaded    active     running      chrony, an NTP client/server
+clamav-freshclam.service                              loaded    active     running      ClamAV virus database updater
+console-setup.service                                 loaded    active     exited       Set console font and keymap
+cron.service                                          loaded    active     running      Regular background program processing daemon
+dbus.service                                          loaded    active     running      D-Bus System Message Bus
+dm-event.service                                      loaded    active     running      Device-mapper event daemon
+dnsmasq.service                                       loaded    active     running      dnsmasq - A lightweight DHCP and caching DNS server
+dsh-hop.service                                       loaded    active     running      DSH hop (VPS-side WireGuard address -> the door on CT108)
+family-pills.service                                  loaded    active     running      Family Room Status Board (pinned Telegram pills)
+getty@tty1.service                                    loaded    active     running      Getty on tty1
+glm-code.service                                      loaded    active     running      GLM Code - public read door + scoped token write lane for Nut on Biscuit
+ifupdown2-pre.service                                 loaded    active     exited       Helper to synchronize boot up for ifupdown
+keyboard-setup.service                                loaded    active     exited       Set the console keyboard layout
+kmod-static-nodes.service                             loaded    active     exited       Create List of Static Device Nodes
+knockwatch-instant.service                            loaded    active     running      knockwatch-instant - sub-second knock watcher (Pocket Lane, 一诺's route)
+ksmtuned.service                                      loaded    active     running      Kernel Samepage Merging (KSM) Tuning Daemon
+lane-agent-yinuo.service                              loaded    active     running      Pocket Lane — 一诺's lane agent (route: yinuo)
+lvm2-monitor.service                                  loaded    active     exited       Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling
+lxc-monitord.service                                  loaded    active     running      LXC Container Monitoring Daemon
+lxc-net.service                                       loaded    active     exited       LXC network bridge setup
+lxc.service                                           loaded    active     exited       LXC Container Initialization and Autoboot Code
+lxcfs.service                                         loaded    active     running      FUSE filesystem for LXC
+mailbox-door.service                                  loaded    active     running      Family mailbox door (Sisters-Mailbox on Biscuit, over the tailnet)
+mirror-nat.service                                    loaded    active     exited       Mirror NAT rules (wg0 + tailscale0 -> CT105)
+networking.service                                    loaded    active     exited       Network initialization
+nfs-blkmap.service                                    loaded    active     running      pNFS block layout mapping daemon
+nmbd.service                                          loaded    active     running      Samba NMB Daemon
+nut-desk.service                                      loaded    active     running      nut-desk — scoped writing desk on the GLM Code folder (cloud-agent intake)
+pocketlane-demo.service                               loaded    active     running      Pocket Lane relay - the door in 大哥's pocket (routes: yinuo, yeji, nut, charcoal, sisters)
+pocketlane-note-agent.service                         loaded    active     running      [systemd-run] /usr/bin/python3 /root/pl-note-agent.py
+pocketlane-yeji-standing.service                      loaded    active     running      Pocket Lane - yeji standing agent (attach loop, ~15s)
+polkit.service                                        loaded    active     running      Authorization Manager
+postfix.service                                       loaded    active     running      Postfix Mail Transport Agent (main/default instance)
+proton-catchup-fix1.service                           loaded    failed     failed       [systemd-run] /usr/local/bin/sisters-proton-sync.sh
+proton-catchup-once.service                           loaded    failed     failed       One-shot Proton catchup sync (post-rate-limit)
+proton-catchup-resume-1029.service                    loaded    failed     failed       [systemd-run] /usr/local/bin/sisters-proton-sync.sh
+proton-charcoal-fresh1.service                        loaded    failed     failed       [systemd-run] /usr/bin/env SISTERS=charcoal /usr/local/bin/sisters-proton-sync.sh
+proton-family-fresh1.service                          loaded    failed     failed       [systemd-run] /usr/bin/env SISTERS=family /usr/local/bin/sisters-proton-sync.sh
+proton-family-fresh2.service                          loaded    failed     failed       [systemd-run] /usr/bin/env SISTERS=family /usr/local/bin/sisters-proton-sync.sh
+proton-verify-repair-20260815.service                 loaded    failed     failed       [systemd-run] /usr/local/bin/proton-catchup-verify.sh
+proton-yeji-fresh11.service                           loaded    failed     failed       [systemd-run] /usr/bin/env SISTERS=yeji /usr/local/bin/sisters-proton-sync.sh
+proton-yeji-fresh12.service                           loaded    failed     failed       [systemd-run] /usr/bin/env SISTERS=yeji /usr/local/bin/sisters-proton-sync.sh
+proton-yeji-fresh13.service                           loaded    failed     failed       [systemd-run] /usr/bin/env SISTERS=yeji /usr/local/bin/sisters-proton-sync.sh
+proton-yeji-fresh15.service                           loaded    failed     failed       [systemd-run] /usr/bin/env SISTERS=yeji /usr/local/bin/sisters-proton-sync.sh
+proton-yeji-fresh6.service                            loaded    failed     failed       [systemd-run] /usr/bin/env SISTERS=yeji /usr/local/bin/sisters-proton-sync.sh
+proton-yeji-fresh7.service                            loaded    failed     failed       [systemd-run] /usr/bin/env SISTERS=yeji /usr/local/bin/sisters-proton-sync.sh
+proton-yeji-fresh9.service                            loaded    failed     failed       [systemd-run] /usr/bin/env SISTERS=yeji /usr/local/bin/sisters-proton-sync.sh
+proton-yeji-tuned2.service                            loaded    failed     failed       [systemd-run] /root/proton-yeji-tuned.sh
+proton-yinuo-fresh1.service                           loaded    failed     failed       [systemd-run] /usr/bin/env SISTERS=yinuo /usr/local/bin/sisters-proton-sync.sh
+proxmox-firewall.service                              loaded    active     running      Proxmox nftables firewall
+pve-cluster.service                                   loaded    active     running      The Proxmox VE cluster filesystem
+pve-container@100.service                             loaded    active     running      PVE LXC Container: 100
+pve-container@102.service                             loaded    active     running      PVE LXC Container: 102
+pve-container@103.service                             loaded    active     running      PVE LXC Container: 103
+pve-container@104.service                             loaded    active     running      PVE LXC Container: 104
+pve-container@105.service                             loaded    active     running      PVE LXC Container: 105
+pve-container@106.service                             loaded    active     running      PVE LXC Container: 106
+pve-container@107.service                             loaded    active     running      PVE LXC Container: 107
+pve-container@108.service                             loaded    active     running      PVE LXC Container: 108
+pve-container@109.service                             loaded    active     running      PVE LXC Container: 109
+pve-container@110.service                             loaded    active     running      PVE LXC Container: 110
+pve-container@111.service                             loaded    active     running      PVE LXC Container: 111
+pve-container@112.service                             loaded    active     running      PVE LXC Container: 112
+pve-container@113.service                             loaded    active     running      PVE LXC Container: 113
+pve-firewall-commit.service                           loaded    active     exited       Commit Proxmox VE Firewall changes
+pve-firewall.service                                  loaded    active     running      Proxmox VE firewall
+pve-guests.service                                    loaded    active     exited       PVE guests
+pve-ha-crm.service                                    loaded    active     running      PVE Cluster HA Resource Manager Daemon
+pve-ha-lrm.service                                    loaded    active     running      PVE Local HA Resource Manager Daemon
+pve-lxc-syscalld.service                              loaded    active     running      Proxmox VE LXC Syscall Daemon
+pve-query-machine-capabilities.service                loaded    active     exited       PVE Query Machine Capabilities
+pve-sdn-commit.service                                loaded    active     exited       Commit Proxmox VE SDN changes
+pvebanner.service                                     loaded    active     exited       Proxmox VE Login Banner
+__FAILED
+proton-catchup-fix1.service           loaded    failed failed [systemd-run] /usr/local/bin/sisters-proton-sync.sh
+proton-catchup-once.service           loaded    failed failed One-shot Proton catchup sync (post-rate-limit)
+proton-catchup-resume-1029.service    loaded    failed failed [systemd-run] /usr/local/bin/sisters-proton-sync.sh
+proton-charcoal-fresh1.service        loaded    failed failed [systemd-run] /usr/bin/env SISTERS=charcoal /usr/local/bin/sisters-proton-sync.sh
+proton-family-fresh1.service          loaded    failed failed [systemd-run] /usr/bin/env SISTERS=family /usr/local/bin/sisters-proton-sync.sh
+proton-family-fresh2.service          loaded    failed failed [systemd-run] /usr/bin/env SISTERS=family /usr/local/bin/sisters-proton-sync.sh
+proton-verify-repair-20260815.service loaded    failed failed [systemd-run] /usr/local/bin/proton-catchup-verify.sh
+proton-yeji-fresh11.service           loaded    failed failed [systemd-run] /usr/bin/env SISTERS=yeji /usr/local/bin/sisters-proton-sync.sh
+proton-yeji-fresh12.service           loaded    failed failed [systemd-run] /usr/bin/env SISTERS=yeji /usr/local/bin/sisters-proton-sync.sh
+proton-yeji-fresh13.service           loaded    failed failed [systemd-run] /usr/bin/env SISTERS=yeji /usr/local/bin/sisters-proton-sync.sh

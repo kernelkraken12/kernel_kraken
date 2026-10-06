@@ -1,0 +1,19 @@
+cpu  533301452 95413324 203649596 9871770397 45658906 0 6751293 0 24221520 0
+cpu  533301595 95413324 203649609 9871770877 45658906 0 6751293 0 24221520 0
+__MEM
+MemTotal:       28654448 kB
+MemAvailable:   18848704 kB
+__LOAD
+5.93 7.82 8.41 8/1471 1549512
+__UP
+up 11 weeks, 1 day, 2 hours, 41 minutes
+__HN
+cn
+__DISK
+Filesystem           1024-blocks      Used Available Capacity Mounted on
+/dev/mapper/pve-root    98497780  74177068  19271164      80% /
+/dev/nvme0n1p2           1046512      9240   1037272       1% /boot/efi
+/dev/sda1              983378332 179406276 753945512      20% /mnt/jellyfin-media
+/dev/sdc1              983377308 737465584 245895340      75% /mnt/mirror
+/dev/fuse                 131072        24    131048       1% /etc/pve
+/dev/sdf1              479596200 169769868 285390672      38% /mnt/biscuit

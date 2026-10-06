@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Tux silhouette (simple geometric penguin) -->
+    <group>
+        <!-- body -->
+        <path
+            android:fillColor="#00E887"
+            android:pathData="M54,20 C40,20 33,34 33,52 C33,68 38,84 54,88 C70,84 75,68 75,52 C75,34 68,20 54,20 Z" />
+        <!-- belly -->
+        <path
+            android:fillColor="#071510"
+            android:pathData="M54,32 C46,32 42,42 42,56 C42,68 46,78 54,80 C62,78 66,68 66,56 C66,42 62,32 54,32 Z" />
+        <!-- eyes -->
+        <path android:fillColor="#071510" android:pathData="M47,38 m-3,0 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0" />
+        <path android:fillColor="#071510" android:pathData="M61,38 m-3,0 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0" />
+        <!-- beak -->
+        <path
+            android:fillColor="#FFB454"
+            android:pathData="M48,45 L60,45 L54,52 Z" />
+    </group>
+</vector>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TuxDeck</string>
+    <color name="deck_bg">#040A08</color>
+    <color name="ic_launcher_bg">#071510</color>
+</resources>

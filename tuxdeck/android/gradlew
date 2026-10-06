@@ -1,0 +1,2 @@
+#!/bin/sh
+exec /home/yurii/.gradle/manual-dists/gradle-8.9/bin/gradle "$@"

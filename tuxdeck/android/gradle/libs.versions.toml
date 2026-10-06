@@ -1,0 +1,30 @@
+[versions]
+agp = "8.7.3"
+kotlin = "2.0.21"
+coreKtx = "1.15.0"
+activityCompose = "1.9.3"
+composeBom = "2024.12.01"
+lifecycleRuntimeKtx = "2.8.7"
+sshj = "0.38.0"
+bouncycastle = "1.78.1"
+slf4jNop = "1.7.36"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-compose-foundation = { group = "androidx.compose.foundation", name = "foundation" }
+androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-compose-material-icons = { group = "androidx.compose.material", name = "material-icons-extended" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+sshj = { group = "com.hierynomus", name = "sshj", version.ref = "sshj" }
+bcprov = { group = "org.bouncycastle", name = "bcprov-jdk18on", version.ref = "bouncycastle" }
+bcpkix = { group = "org.bouncycastle", name = "bcpkix-jdk18on", version.ref = "bouncycastle" }
+slf4j-nop = { group = "org.slf4j", name = "slf4j-nop", version.ref = "slf4jNop" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
