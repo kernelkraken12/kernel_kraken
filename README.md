@@ -18,6 +18,7 @@ this repo is tested before it is uploaded.
 | [**protondb-cli**](protondb-cli/) | Check any Steam game's Linux compatibility (ProtonDB) from your terminal — verdicts, confirmed fixes, and beginner guidance. |
 | [**shader-warmup**](shader-warmup/) | Pre-bake DXVK shader caches so Linux games start smooth — no more first-minute stutter. |
 | [**gamesage**](gamesage/) | Session reports + performance tweaks for Linux gamers — run before you play, get a friendly report + tips after. |
+| [**tuxdeck**](tuxdeck/) | Mission control for your Linux fleet, in your pocket — live CPU/mem/load, systemd units, the journal and a real SSH terminal, plus a Wake-on-LAN power button. |
 
 ## 🧰 What lives here
 
@@ -25,7 +26,7 @@ this repo is tested before it is uploaded.
 - Proxmox and homelab helpers
 - Linux-gaming tools (Proton, DXVK, shader caches)
 - System scripts and configuration examples
-- Android open-source experiments (when they arrive)
+- Android open-source apps — see `tuxdeck` (and its pure-Kotlin, unit-tested core)
 
 ## 📜 Project conventions
 
